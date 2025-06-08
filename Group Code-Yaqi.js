@@ -43,8 +43,13 @@ function draw() {
   // Clear previous frame with black background
   CanvasManager.clearBackground();
 
-  // Loop through each circle and draw its wheel decoration
-  circleSystem.circles.forEach(c => {
-    DecorateWheels.drawWheel(c);
-  });
+  // Set default scaleFactor to 1.
+  // If a global variable `scaleOverride` is defined (e.g., from audio input),
+  // use that instead to dynamically scale the visuals.
+  let scaleFactor = typeof scaleOverride !== 'undefined' ? scaleOverride : 1;
+
+  for (let i = 0; i < circleSystem.circles.length; i++) {
+    const c = circleSystem.circles[i];
+    DecorateWheels.drawWheel(c, scaleFactor);
+  }
 }

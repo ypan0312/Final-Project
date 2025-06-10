@@ -23,8 +23,14 @@ const DecorateWheels = {
 
       // Calculate and draw dots around the ring
       const numPoints = 36 + i * 6; // Increase dot count with layer index
+
+      // ✅ MODIFIED: Add per-layer rotation using layerRotSpeeds if available
+      const rotOffset = c.layerRotSpeeds 
+                        ? c.layerRotSpeeds[i] * frameCount * 60 // rotation per frame
+                        : 0; // fallback if no rotation defined
+
       for (let j = 0; j < numPoints; j++) {
-        const ang = (TWO_PI / numPoints) * j; // Angle of each point
+        const ang = (TWO_PI / numPoints) * j + rotOffset; // ✅ Add rotation offset
         const px  = cos(ang) * layerR;
         const py  = sin(ang) * layerR;
         noStroke();
@@ -41,8 +47,22 @@ const DecorateWheels = {
     pop(); // Restore drawing state
   },
 
-  // Generates a random RGB color for visual variety
+  // ✅ MODIFIED: Uses a fixed palette instead of random RGB values
+  // Generates a random color from a fixed set sampled from artwork
   randomColor: function() {
-    return color(random(255), random(255), random(255));
+    const palette = [
+      '#E63946', // pink/red
+      '#F4A261', // orange
+      '#2A9D8F', // teal
+      '#264653', // dark blue
+      '#FDE74C', // yellow
+      '#9A8C98', // muted purple
+      '#8AC926', // lime green
+      '#1982C4', // cornflower blue
+      '#FF006E'  // magenta
+    ];
+    // pick one at random
+    let hex = palette[floor(random(palette.length))];
+    return color(hex);
   }
 };

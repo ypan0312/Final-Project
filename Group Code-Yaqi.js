@@ -6,7 +6,7 @@ const CanvasManager = {
     // Make the canvas fill the browser window
     createCanvas(windowWidth, windowHeight);
     // Prevent draw() from looping automatically
-    noLoop();
+    //noLoop();
   },
 
   // Resize the canvas when the window dimensions change.

@@ -4,7 +4,7 @@
 
 This visual piece combines automatic animation, audio-driven effects, and user input:
 
-- After the page loads, the animation will begin automatically.
+- After the page is loaded, the animations of rotation, rhythm, color change, etc. driven by **Perlin noise will automatically** start.
 - **Clicking anywhere** on the canvas will generate ripple-like effects, as seen in Regina's user input section.
 - The circles in the center **pulse in sync with background music**, implemented by Danni’s audio-driven animation.
 

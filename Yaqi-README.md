@@ -1,4 +1,4 @@
-# Perlin Noise-Based Animated Circles
+# Wheels of fortune
 
 ## How to Interact with the Work
 

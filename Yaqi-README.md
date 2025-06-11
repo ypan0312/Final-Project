@@ -75,7 +75,7 @@ Even-numbered layers rotate clockwise, odd layers rotate counter-clockwise.
 - Color Randomization Control
 The original group code assigned fully random RGB colors. I restricted the color range to a more harmonious hue band and used consistent brightness/saturation levels:
 
-![Code Screenshot](libraries/libraries/untitled_work_12.jpg)
+![Code Screenshot](libraries/untitled_work_12.jpg)
 
 ## References
 

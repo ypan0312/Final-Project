@@ -24,7 +24,7 @@ const DecorateWheels = {
       // Calculate and draw dots around the ring
       const numPoints = 36 + i * 6; // Increase dot count with layer index
 
-      // ✅ MODIFIED: Add per-layer rotation using layerRotSpeeds if available
+      // MODIFIED: Add per-layer rotation using layerRotSpeeds if available
       const rotOffset = c.layerRotSpeeds 
                         ? c.layerRotSpeeds[i] * frameCount * 60 // rotation per frame
                         : 0; // fallback if no rotation defined
@@ -47,7 +47,7 @@ const DecorateWheels = {
     pop(); // Restore drawing state
   },
 
-  // ✅ MODIFIED: Uses a fixed palette instead of random RGB values
+  // MODIFIED: Uses a fixed palette instead of random RGB values
   // Generates a random color from a fixed set sampled from artwork
   randomColor: function() {
     const palette = [

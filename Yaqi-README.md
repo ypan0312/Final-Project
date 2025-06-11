@@ -31,7 +31,7 @@ These noise-based animations were implemented inside an IIFE (Immediately Invoke
 
 The idea for rotating layers was inspired by the interactive app version of **Vincent Van Gogh’s _Starry Night_**, where celestial forms swirl in opposing directions to create a dreamlike visual field:
 
-![Starry Night](libraries/starry_night.jpg)
+![Starry Night](libraries/untitled_work_13.jpg)
 
 > [ Starry Night Interactive App](https://www.youtube.com/watch?v=Ph1SEFWcL58)
 
@@ -41,7 +41,7 @@ This inspired me to add clockwise and counter-clockwise spin effects to each cir
 
 I was also influenced by a sketch (https://openprocessing.org/sketch/2434943), which demonstrated how circle radius can vary over time. This directly informed the `pulseAmp` and `scale` logic in my update function.
 
-![Circle](libraries/rotation_reference.jpg)
+![Circle](libraries/untitled_work_14.jpg)
 
 
 ---
@@ -75,7 +75,7 @@ Even-numbered layers rotate clockwise, odd layers rotate counter-clockwise.
 - Color Randomization Control
 The original group code assigned fully random RGB colors. I restricted the color range to a more harmonious hue band and used consistent brightness/saturation levels:
 
-![Code Screenshot](libraries/screenshot_2025_06_11_140240.jpg)
+![Code Screenshot](libraries/libraries/untitled_work_12.jpg)
 
 ## References
 
